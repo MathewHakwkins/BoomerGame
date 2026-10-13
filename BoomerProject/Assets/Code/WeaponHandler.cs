@@ -5,7 +5,7 @@ public class WeaponHandler : MonoBehaviour
     public Transform weaponAnchor;
     public Camera mainCam;
 
-    private Weapon equippedWeapon;
+    public Weapon equippedWeapon;
 
     private void OnAttack()
     {

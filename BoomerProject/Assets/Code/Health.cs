@@ -38,6 +38,6 @@ public class Health : MonoBehaviour
         {
             health += Healamount;
         }
-
+        Debug.Log(health);
     }
 }

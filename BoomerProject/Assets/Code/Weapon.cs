@@ -5,7 +5,9 @@ public class Weapon : MonoBehaviour
     public Camera cam;
     public float damage = 10;
     public float attackDelay = 1;
+    public float Ammo = 10;
     private float attackCooldown;
+
 
     private void Update()
     {
@@ -17,7 +19,7 @@ public class Weapon : MonoBehaviour
     public void Fire()
     {
 
-        if (attackCooldown <= 0)
+        if ((attackCooldown <= 0) && (Ammo > 0))
         {
 
             RaycastHit hit;
@@ -30,6 +32,7 @@ public class Weapon : MonoBehaviour
                 }
 
             }
+            Ammo -= 1;
             attackCooldown = attackDelay;
         }
     }
