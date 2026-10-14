@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1284130095927777190}
   - component: {fileID: 2016996565378215585}
   - component: {fileID: 2107928680429894592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 542824079215082987}
   - component: {fileID: 1929075472521867620}
   - component: {fileID: 2892823814885504228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 5048954861237718167}
   - component: {fileID: 3073041791023663212}
   - component: {fileID: 6977303494333292278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Handgaurd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 1736255222430879027}
   - component: {fileID: 1362022806340652363}
   - component: {fileID: 8105949161905801145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Recever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3939641272627779101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 6372983877591723649}
   - component: {fileID: 3666763103978080673}
   - component: {fileID: 8333285777973247696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

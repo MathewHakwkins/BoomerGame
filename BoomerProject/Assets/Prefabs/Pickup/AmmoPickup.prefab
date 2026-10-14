@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 347811589235060392}
   - component: {fileID: 2577575046466627387}
   - component: {fileID: 4260856506813913160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AmmoBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8068314270529950242}
   - component: {fileID: 4211150696980979793}
   - component: {fileID: 3801975003580096147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534414551782889620}
   - component: {fileID: 6118478232304992059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AmmoPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

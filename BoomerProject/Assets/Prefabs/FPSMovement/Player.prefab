@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1829257108169572597}
   - component: {fileID: 6530977529632343845}
   - component: {fileID: 7366585255000007576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 5856955660640432765}
   - component: {fileID: 6432317243415360073}
   - component: {fileID: 7605632368583170369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 6717577699922942792}
   - component: {fileID: 4756691157078771906}
   - component: {fileID: 1789191439649621422}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHandler
   weaponAnchor: {fileID: 4103990783587950093}
   mainCam: {fileID: 5856955660640432765}
+  equippedWeapon: {fileID: 0}
 --- !u!1 &7708967813357090347
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4103990783587950093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeaponAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

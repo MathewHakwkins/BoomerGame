@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2802700183684533164}
   - component: {fileID: 7020399992393422885}
   - component: {fileID: 6966558050156885296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534414551782889620}
   - component: {fileID: 2012210583176805658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 1474239977161171163}
   - component: {fileID: 8026875328943987802}
   - component: {fileID: 7991987402462039716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
