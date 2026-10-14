@@ -7,13 +7,15 @@ public class Weapon : MonoBehaviour
     public float attackDelay = 1;
     public float Ammo = 10;
     private float attackCooldown;
+    public ParticleSystem Shoot;
+    public float CooldownSpeed = 2;
 
 
     private void Update()
     {
         if (attackCooldown > 0)
         {
-            attackCooldown -= Time.deltaTime;
+            attackCooldown -= Time.deltaTime * CooldownSpeed;
         }
     }
     public void Fire()
@@ -32,6 +34,7 @@ public class Weapon : MonoBehaviour
                 }
 
             }
+            Shoot.Play();
             Ammo -= 1;
             attackCooldown = attackDelay;
         }
