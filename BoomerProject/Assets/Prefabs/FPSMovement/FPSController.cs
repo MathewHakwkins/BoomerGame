@@ -213,4 +213,7 @@ public class FPSController : MonoBehaviour
             groundDistance = float.PositiveInfinity;
         }
     }
+
+
+    
 }
