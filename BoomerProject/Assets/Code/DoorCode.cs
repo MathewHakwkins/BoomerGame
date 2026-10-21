@@ -3,21 +3,18 @@ using UnityEngine;
 public class DoorCode : MonoBehaviour
 {
     public Animator Animation;
+    public bool PlayerClose = false;
 
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            OpenDoor();
-        }
-    }
 
 
 
     public void OpenDoor()
     {
-        Animation.SetBool("IsOpen", true);
+        if (PlayerClose)
+        {
+            Animation.SetBool("IsOpen", true);
+        }
     }
 
 
