@@ -214,6 +214,24 @@ public class FPSController : MonoBehaviour
         }
     }
 
-
     
+    private void Interact()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit))
+        {
+            if (hit.transform.parent.CompareTag("Door"))
+            {
+
+            }
+            else if (hit.transform.parent.CompareTag("Switch"))
+            {
+
+            }
+            else if (hit.transform.parent.parent.CompareTag("Exit"))
+            {
+
+            }
+        }
+    }
 }
