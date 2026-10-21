@@ -5,16 +5,26 @@ public class Health : MonoBehaviour
 
     public float maxHealth = 100;
     public float health;
-
-
+    public GameObject UI;
+    private UICode HealthUI;
     private void Awake()
     {
         health = maxHealth;
+        if ((UI.GetComponent<UICode>()) != null)
+        {
+            HealthUI = UI.GetComponent<UICode>();
+        }
+
     }
 
     public void Damage(float damage)
     {
         health -= damage;
+        if (HealthUI != null)
+        {
+            HealthUI.UpdateHealth(health);
+        }
+
 
         if (health <= 0)
         {
@@ -39,6 +49,9 @@ public class Health : MonoBehaviour
         {
             health += Healamount;
         }
-        Debug.Log(health);
+        if (HealthUI != null)
+        {
+            HealthUI.UpdateHealth(health);
+        }
     }
 }

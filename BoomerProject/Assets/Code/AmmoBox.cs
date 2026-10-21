@@ -8,7 +8,7 @@ public class AmmoBox : MonoBehaviour
     public void ReloadAmmo(Weapon Weapon)
     {
         Weapon.Ammo += AmmoAmount;
-        Debug.Log(Weapon.Ammo);
+        
         Destroy(gameObject);
     }
 }

@@ -37,6 +37,8 @@ public class Weapon : MonoBehaviour
             Shoot.Play();
             Ammo -= 1;
             attackCooldown = attackDelay;
+
+
         }
     }
 }
