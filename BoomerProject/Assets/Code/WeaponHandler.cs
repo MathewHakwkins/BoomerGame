@@ -4,6 +4,7 @@ public class WeaponHandler : MonoBehaviour
 {
     public Transform weaponAnchor;
     public Camera mainCam;
+    
 
     public Weapon equippedWeapon;
 

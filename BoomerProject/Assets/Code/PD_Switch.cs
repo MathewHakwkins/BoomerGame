@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class PD_Switch : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject SwitchBase;
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            SwitchCode Switch = SwitchBase.GetComponent<SwitchCode>();
+            if (Switch != null)
+            {
+                Switch.PlayerClose = true;
+            }
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerExit(Collider other)
     {
-        
+
+        if (other.CompareTag("Player"))
+        {
+
+            SwitchCode Switch = SwitchBase.GetComponent<SwitchCode>();
+            if (Switch != null)
+            {
+                Switch.PlayerClose = false;
+            }
+
+        }
+
     }
 }

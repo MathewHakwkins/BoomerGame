@@ -14,6 +14,14 @@ public class PlayerDetector : MonoBehaviour
             {
                 enemyMelee.target = other.gameObject;
             }
+            else 
+            {
+                ENRangeBehavior RangeEnemey = EnemyAI.GetComponent<ENRangeBehavior>();
+                if(RangeEnemey != null)
+                {
+                    RangeEnemey.target = other.gameObject;
+                }
+            }
 
         }
     }

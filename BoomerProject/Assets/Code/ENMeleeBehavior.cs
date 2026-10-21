@@ -38,6 +38,8 @@ public class ENMeleeBehavior : MonoBehaviour
             }
             
         }
+
+
         if (attackCooldown > 0)
             {
                 attackCooldown -= Time.deltaTime;

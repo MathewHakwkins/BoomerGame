@@ -12,7 +12,8 @@ public class PD_Door : MonoBehaviour
             DoorCode Door = DoorBase.GetComponent<DoorCode>();
             if (Door != null)
             {
-                Door.PlayerClose = true;
+                
+                
                 
             }
         }
@@ -26,7 +27,7 @@ public class PD_Door : MonoBehaviour
             DoorCode Door = DoorBase.GetComponent<DoorCode>();
             if (Door != null)
             {
-                Door.PlayerClose = false;
+               
                 
             }
 

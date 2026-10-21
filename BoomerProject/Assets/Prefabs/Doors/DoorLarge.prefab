@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8924754920864704859}
   - component: {fileID: 4087438810311581629}
   - component: {fileID: 2256315929456707202}
-  - component: {fileID: 4153808740198026034}
   m_Layer: 9
   m_Name: PlayerTrigger
   m_TagString: Door
@@ -57,25 +56,12 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4153808740198026034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2767031765796485920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c449b78de80cb34eb78c973b437ab59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PD_Door
-  DoorBase: {fileID: 4390807026367880678}
 --- !u!1 &4028492206854145822
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,9 +72,9 @@ GameObject:
   m_Component:
   - component: {fileID: 534414551782889620}
   - component: {fileID: 944210311371283580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoorLarge
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +130,7 @@ GameObject:
   - component: {fileID: 2130532177172748436}
   - component: {fileID: 8759580315666603684}
   - component: {fileID: 3206322534612098292}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LargeDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,4 +244,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorCode
   Animation: {fileID: 944210311371283580}
-  PlayerClose: 0
+  PlayerClose: 1
