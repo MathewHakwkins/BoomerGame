@@ -19,13 +19,26 @@ public class WeaponHandler : MonoBehaviour
         }
     }
 
-  
+
+    private void Update()
+    {
+        if (equippedWeapon != null)
+        {
+            if (equippedWeapon.Ammo != CurrentAmmo)
+            {
+                CurrentAmmo = equippedWeapon.Ammo;
+                AmmoUI.UpdateAmmo(equippedWeapon.Ammo);
+            }
+        }
+    }
+
+
     private void OnAttack()
     {
         if (equippedWeapon != null)
         {
             equippedWeapon.Fire();
-            AmmoUI.UpdateAmmo(equippedWeapon.Ammo);
+            
             
             
         }

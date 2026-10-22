@@ -238,7 +238,7 @@ public class FPSController : MonoBehaviour
                 }
 
             }
-            else if (hit.transform.parent.parent.CompareTag("Exit"))
+            else if (hit.transform.parent.CompareTag("Exit"))
             {
                 ExitCode Exit = hit.transform.parent.GetComponent<ExitCode>();
                 if (Exit != null)
